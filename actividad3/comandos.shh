@@ -1,0 +1,26 @@
+Parte 1
+sudo useradd usuario1 && sudo useradd usuario2 && sudo useradd usuario3 && sudo passwd usuario1 && sudo passwd usuario2 && sudo passwd usuario3 && id usuario1 && sudo userdel usuario3 && sudo userdel -r usuario3
+
+[sudo] contraseña para dmaza: 
+Nueva contraseña: 
+CONTRASEÑA INCORRECTA: La contraseña tiene menos de 8 caracteres
+Vuelva a escribir la nueva contraseña: 
+Las contraseñas no coinciden.
+Nueva contraseña: 
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+Nueva contraseña: 
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+Nueva contraseña: 
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+uid=1001(usuario1) gid=1001(usuario1) grupos=1001(usuario1)
+userdel: el usuario «usuario3» no existe
+
+Parte 2
+sudo groupadd grupo1 && sudo groupadd grupo2 && sudo usermod -aG grupo1 usuario1 && sudo usermod -aG grupo2 usuario2 && groups usuario1 && groups usuario2 && sudo groupdel grupo2
+
+usuario1 : usuario1 grupo1
+usuario2 : usuario2 grupo2
+
